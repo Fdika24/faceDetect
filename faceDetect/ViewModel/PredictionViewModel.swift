@@ -9,7 +9,7 @@ import Foundation
 
 
 class Prediction:ObservableObject {
-    @Published var result = AnimalModel()
+    @Published var result = 0
 
 }
 

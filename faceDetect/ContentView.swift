@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+   @ViewBuilder var body: some View {
+    NavigationView{
+        HomeView()
+        }
     }
     
-    func prediksi() {
-        let mem = 0
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
