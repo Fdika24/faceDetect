@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF03F33026B1AFF7008BE586 /* AnimalModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FF03F32F26B1AFF7008BE586 /* AnimalModel.mlmodel */; };
 		FF197AD526B1A7430059B62E /* faceDetectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF197AD426B1A7430059B62E /* faceDetectApp.swift */; };
 		FF197AD726B1A7430059B62E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF197AD626B1A7430059B62E /* ContentView.swift */; };
 		FF197AD926B1A7450059B62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF197AD826B1A7450059B62E /* Assets.xcassets */; };
 		FF197ADC26B1A7450059B62E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF197ADB26B1A7450059B62E /* Preview Assets.xcassets */; };
+		FF197AEB26B1A8280059B62E /* PredictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF197AEA26B1A8280059B62E /* PredictionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF03F32F26B1AFF7008BE586 /* AnimalModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AnimalModel.mlmodel; path = ../../../../FaceDetection/FaceDetection/Model/ModelML/AnimalModel.mlmodel; sourceTree = "<group>"; };
 		FF197AD126B1A7430059B62E /* faceDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = faceDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF197AD426B1A7430059B62E /* faceDetectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faceDetectApp.swift; sourceTree = "<group>"; };
 		FF197AD626B1A7430059B62E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF197AD826B1A7450059B62E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF197ADB26B1A7450059B62E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF197ADD26B1A7450059B62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF197AEA26B1A8280059B62E /* PredictionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,9 @@
 			children = (
 				FF197AD426B1A7430059B62E /* faceDetectApp.swift */,
 				FF197AD626B1A7430059B62E /* ContentView.swift */,
+				FF197AE926B1A8170059B62E /* View */,
+				FF197AE826B1A80D0059B62E /* ViewModel */,
+				FF197AE426B1A7560059B62E /* Model */,
 				FF197AD826B1A7450059B62E /* Assets.xcassets */,
 				FF197ADD26B1A7450059B62E /* Info.plist */,
 				FF197ADA26B1A7450059B62E /* Preview Content */,
@@ -67,6 +74,37 @@
 				FF197ADB26B1A7450059B62E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF197AE426B1A7560059B62E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF197AE526B1A75B0059B62E /* ModelML */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FF197AE526B1A75B0059B62E /* ModelML */ = {
+			isa = PBXGroup;
+			children = (
+				FF03F32F26B1AFF7008BE586 /* AnimalModel.mlmodel */,
+			);
+			path = ModelML;
+			sourceTree = "<group>";
+		};
+		FF197AE826B1A80D0059B62E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF197AEA26B1A8280059B62E /* PredictionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF197AE926B1A8170059B62E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF197AEB26B1A8280059B62E /* PredictionViewModel.swift in Sources */,
 				FF197AD726B1A7430059B62E /* ContentView.swift in Sources */,
+				FF03F33026B1AFF7008BE586 /* AnimalModel.mlmodel in Sources */,
 				FF197AD526B1A7430059B62E /* faceDetectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
